@@ -20,6 +20,7 @@ nav {
     gap: 23px;
 
     & span {
+        transition: margin-top 0.5s;
         z-index: 9;
         margin-left: -11px;
         margin-top: 0px;
@@ -58,6 +59,7 @@ nav {
     }
 
     & a {
+        border-radius: 8px;
         height: 56px;
         display: flex;
         justify-content: center;
@@ -69,6 +71,19 @@ nav {
         }
     }
 }
+
+.active {
+    transition: all 0.7s;
+
+    background: #ea736d;
+    box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+    & svg {
+        & path {
+            fill: #ffffff;
+        }
+    }
+}
+
 .login {
     & a {
         padding: 16px;
